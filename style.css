@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #ece5dd;
+  }
+  
+  .chat-container {
+    max-width: 600px;
+    margin: 30px auto;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+  }
+  
+  .chat-header {
+    background: #075e54;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  #messages {
+    flex: 1;
+    list-style: none;
+    padding: 15px;
+    margin: 0;
+    overflow-y: auto;
+    background-color: #e5ddd5;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #messages li {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    align-items: flex-start;
+    max-width: 80%;
+  }
+  
+  .you {
+    align-self: flex-end;
+    flex-direction: row-reverse;
+  }
+  
+  .other {
+    align-self: flex-start;
+  }
+  
+  .avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #25d366;
+    border-radius: 50%;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  
+  .message-content {
+    background-color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 10px;
+    position: relative;
+    font-size: 14px;
+    max-width: 300px;
+  }
+  
+  .you .message-content {
+    background-color: #dcf8c6;
+  }
+  
+  .timestamp {
+    font-size: 0.75em;
+    color: #555;
+    margin-top: 5px;
+    text-align: right;
+  }
+  
+  form {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    background: #f0f0f0;
+  }
+  
+  form input {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    flex: 1;
+    outline: none;
+  }
+  
+  form button {
+    padding: 10px 20px;
+    background: #128c7e;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  
